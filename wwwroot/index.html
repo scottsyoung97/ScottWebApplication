@@ -1,42 +1,47 @@
 ﻿<!DOCTYPE html>
-<html>
-<head>
-    <title>Prof. Ganderson Fan Site</title>
-    <link href="css/main.css" rel="stylesheet" />
-</head>
-<body>
-    <h1>
-        Prof. Ganderson Fan Site
-    </h1>
-    <img src="img/greganderson.jpeg" />
-    <p>Prof. Greg Anderson (a.k.a "Ganderson") is a Professor in the IS Department at BYU</p>
-    <br />
-    <p>Pop Quiz: We love him because...?</p>
-    <ul class="quiz-props">
-        <li>A: The lucsious locks he had when he was growing up.</li>
-        <li>B: He can pound a pound of bacon like it ain't no thang.</li>
-        <li>C: That million dollar smile.</li>
-        <li>D: He looks out and cares for everyone around him.</li>
-        <li>E: All of the above.</li>
-    </ul>
-
-    <h2>Fan Mail</h2>
-    <form>
-        <label>From:</label>
-        <input id="from" />
+<center>
+    <header>
+        <h3>Scott Young</h3>
+    </header>
+    <html>
+    <head>
+        <title>Scott Young</title>
+        <link href="css/main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <img src="img/scott.jpg" class="scottimg" />
         <br />
-        <label>Email:</label>
-        <input id="email" />
+        <h3>What I Hope to Get Out of 413:</h3>
+        <p>This is what I hope to get out of 413</p>
+        <br /><br /><br />
+        <h3>My Three Jobs I Would Pursue</h3>
+        <ol>
+            <li>Business Analyst</li>
+            <li>Asset Manager</li>
+            <li>CFA</li>
+        </ol>
         <br />
-        <label>Subject:</label>
-        <input id="subject" />
-        <br />
-        <label>Message:</label>
-        <textarea id="message" rows="5"></textarea>
-        <br />
-        <br />
-        <input type="Submit" value="Send Message" id="submitButton" />
-    </form>
-    <script src="js/FanMail.js"></script>
-</body>
+        <h3>Grade Calculation</h3>
+        <p>Input Percentage of Total Points for Each Category</p>
+        <form>
+            <label>Assignments:</label>
+            <input id="assignments" type="number"/>
+            <br /><br /><br />
+            <label>Group Project:</label>
+            <input id="groupProj" type="number"/>
+            <br /><br /><br />
+            <label>Quizzes:</label>
+            <input id="quizzes" type="number"/>
+            <br /><br /><br />
+            <label>Exams:</label>
+            <input id="exams" type="number"/>
+            <br /><br /><br />
+            <label>INTEX:</label>
+            <input id="intex" type="number"/>
+            <br /><br /><br />
+            <input type="Submit" value="Compute Final 413 Grade" id="submitButton" />
+        </form>
+        <script src="js/FanMail.js"></script>
+    </body>
 </html>
+</center>
