@@ -1,4 +1,5 @@
 ﻿var submit = document.getElementById("submitButton")
+
 submit.addEventListener("click", function () {
 
     var assignments = Number(document.getElementById("assignments").value)
