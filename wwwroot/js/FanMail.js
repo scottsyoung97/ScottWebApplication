@@ -1,12 +1,10 @@
-﻿var submit = document.getElementById("submitButton")
+﻿$("#submitButton").click(function () {
 
-submit.addEventListener("click", function () {
-
-    var assignments = Number(document.getElementById("assignments").value)
-    var groupProject = Number(document.getElementById("groupProj").value)
-    var quizzes = Number(document.getElementById("quizzes").value)
-    var exams = Number(document.getElementById("exams").value)
-    var intex = Number(document.getElementById("intex").value)
+    var assignments = Number($("#assignments").val())
+    var groupProject = Number($("#groupProj").val())
+    var quizzes = Number($("#quizzes").val())
+    var exams = Number($("#exams").val())
+    var intex = Number($("#intex").val())
 
     var finalPercent = (assignments * .5) + (groupProject * .1) +
         (quizzes * .1) + (exams * .2) + (intex * .1);
@@ -55,4 +53,4 @@ submit.addEventListener("click", function () {
 
     alert(finalString);
 
-})
+});
