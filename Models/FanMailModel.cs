@@ -8,6 +8,7 @@ namespace ScottWebApplication.Models
 {
     public class FanMailModel
     {
+        //getters and setters for all users information as well as limiting the input
         [Range(0, 100)]
         [Required]
         public int assignments { get; set; }

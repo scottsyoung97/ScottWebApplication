@@ -1,16 +1,19 @@
 ﻿$("#submitButton").click(function () {
 
+    //Retrieve Data from User
     var assignments = Number($("#assignments").val())
     var groupProject = Number($("#groupProj").val())
     var quizzes = Number($("#quizzes").val())
     var exams = Number($("#exams").val())
     var intex = Number($("#intex").val())
 
+    //calculate final grade
     var finalPercent = (assignments * .5) + (groupProject * .1) +
         (quizzes * .1) + (exams * .2) + (intex * .1);
 
     var finalGrade = "";
 
+    //calculate final letter grade
     if (finalPercent >= 94) {
         finalGrade = "A"
     }
@@ -48,9 +51,11 @@
         finalGrade = "E"
     }
 
+    //convert letter and number grade into string to show to user
     finalPercent = String(finalPercent);
     finalString = finalGrade + " " + finalPercent + "%"
 
+    //alert user of final grade
     alert(finalString);
 
 });
